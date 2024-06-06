@@ -36,7 +36,7 @@ jobs:
       - name: Build & Push to GitHub Container Registry
         uses: docker/build-push-action@v5
         with:
-          context: knowlage-base
+          context: ./
           file: docker/frontend/Dockerfile
           push: true
           platforms: linux/amd64
