@@ -40,7 +40,7 @@ jobs:
           file: docker/frontend/Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/yarozers/kb -ui:${{ steps.extract_version.outputs.VERSION }},ghcr.io/yarozers/kb-ui:latest
+          tags: ghcr.io/yarozers/kb-ui:${{ steps.extract_version.outputs.VERSION }},ghcr.io/yarozers/kb-ui:latest
           build-args: |
             APP_VERSION=${{ steps.extract_version.outputs.VERSION }}
             # Add more build arguments if needed
