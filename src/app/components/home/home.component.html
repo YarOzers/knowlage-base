@@ -1,0 +1,6 @@
+<!-- home.component.html -->
+<div *ngIf="userDetails">
+  <h1>Welcome, {{ userDetails.firstName }} {{ userDetails.lastName }}!</h1>
+  <p>Email: {{ userDetails.email }}</p>
+  <button (click)="logout()">Logout</button>
+</div>

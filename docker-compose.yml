@@ -1,0 +1,20 @@
+services:
+  bsn-ui:
+    container_name: kb-ui
+    image: ghcr.io/yarozers/kb-ui:1.0.0
+    ports:
+      - 8080:80
+    networks:
+      - kb
+
+networks:
+  kb:
+    name: kb  # Явное указание имени сети
+    external: true
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
+#    строка для запуска workflow
+
