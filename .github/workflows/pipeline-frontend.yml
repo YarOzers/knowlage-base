@@ -37,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./
-          file: docker/frontend/Dockerfile
+          file: frontend/Dockerfile
           push: true
           platforms: linux/amd64
           tags: ghcr.io/yarozers/kb-ui:${{ steps.extract_version.outputs.VERSION }},ghcr.io/yarozers/kb-ui:latest
