@@ -1,5 +1,5 @@
 services:
-  bsn-ui:
+  kb-ui:
     container_name: kb-ui
     image: ghcr.io/yarozers/kb-ui:1.0.0
     ports:
