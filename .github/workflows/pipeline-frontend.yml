@@ -5,11 +5,12 @@ on:
     branches:
       - master
     paths:
-      - ./
+      - *
       - ./**/*
       - docker/frontend/**
       - 'docker-compose.yml'
       - .github/workflows/*-frontend.yml
+      - 'nginx.conf'
 
 jobs:
   build-image:
