@@ -12,7 +12,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
     try {
       await keycloak.init({
         config: {
-          url: 'http://localhost:9999',
+          url: 'http://188.235.130.37:9999',
           realm: 'knowlage-base',
           clientId: 'kb',
         },
